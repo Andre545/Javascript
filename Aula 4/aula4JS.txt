@@ -1,0 +1,30 @@
+Dica Igor:
+<ctrl><;> //comenta a linha
+
+________________________________________________
+REVISÃO:
+Estruturas de controle condicional
+
+if (condição) {
+  //verdadeiro
+}
+
+/**** simplificando o if ****/
+if (condição) //verdadeiro
+
+________________________________________________
+if (condição) {
+  //verdadeiro
+} else {
+  //falso
+}
+
+/**** simplificando o if else ****/
+Condição ? verdadeiro : falso
+//operador ternário
+
+
+
+
+
+
