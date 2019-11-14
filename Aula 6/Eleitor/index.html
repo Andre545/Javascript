@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eleitor</title>
+</head>
+<body>
+    <h1>Eleitor</h1>
+    <form name="frmEleitor">
+        <input type="text" placeholder="Idade" name="txtIdade">
+        <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+        <input type="reset" value="Limpar">
+        
+        </p>
+    </form>
+    <script>
+        /**
+        * Exercicio de fixação else if AND OR
+        * @author André Barros
+        */
+
+        let Idade 
+        
+        function verificar(){
+            Idade = Number(frmEleitor.txtIdade.value)
+            
+            if(Idade < 16){
+                alert("Proibido Votar")
+            }else if(Idade >= 18 && Idade <= 70 ){
+                alert("Voto Obrigatorio")
+            }
+            else{
+                alert("Voto facultativo")
+            }    
+        }
+    </script>
+</body>
+</html>

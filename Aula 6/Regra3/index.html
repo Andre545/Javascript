@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regra de 3</title>
+</head>
+<body>
+    <H1>Regra de 3</H1>
+    <form name="frmRegra3">
+        <input type="text" name="txtX" placeholder="X %" size="6"> <span>de</span> 
+        <input type="text" name="txtY" placeholder="Y" size="6"> 
+        <input type="button" value=" = " onclick="calcular()"> 
+        <input type="text" name="txtResultado" disabled> 
+      </form>
+      <script>
+          
+          let X, Y, Resultado
+
+          function calcular(){
+            X = Number(frmRegra3.txtX.value.replace(",","."))
+            Y = Number(frmRegra3.txtY.value.replace(",","."))
+            Resultado = (X * Y)/100
+            // ou Resultado - (X * Y) * 0,01 
+            frmRegra3.txtResultado.value = Resultado.toFixed(2)
+          }
+      </script>
+</body>
+</html>
