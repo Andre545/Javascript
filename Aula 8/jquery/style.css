@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: sans-serif; 
+}
+.Layout {
+    background-image: url('imagens/background.jpg');
+    height: 320px;
+    background-size: cover; /* mantem o tamanho maximo sem repetir */
+    background-position: center;
+    padding-top: 200px;
+    background-attachment: fixed;
+}
+.Layout p{
+    text-align: center;
+    color: #FFF;
+    font-size: 3em; /* 1em = 12pt ou 16px */
+    font-weight: bold;
+}
+.Modulo {
+    padding: 150px 0px 150px 0px;
+    margin:0 auto;
+    max-width: 1024px;
+}
+footer {
+    background-color: #8b0000;
+    padding: 70px;
+    text-align: center;
+    color: #FFF;
+    font-size: 0.9em;
+}
+#top {
+    position: fixed;
+    cursor:pointer;
+    right: 15px;
+    bottom: 15px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validação Simples com JS</title>
+</head>
+<body>
+    <h1>Validação Simples com JS</h1>
+    <form name="frmCadastro" action="cadastro.php" method="post" onsubmit="return validacao()">
+        <input type="text" name="txtNome" placeholder="Nome"><br>
+        <input type="text" name="txtCpf" placeholder="CPF"><br>
+        <label>Sexo</label><br>
+        <input type="radio" name="sexo" value="M" checked="checked">Masculino
+        <input type="radio" name="sexo" value="F">Feminino<br>
+        <textarea name="txtPerfil" rows="10" cols="50"></textarea><br>
+        <input type="submit" name="enviar" value="Salvar">
+
+    </form>
+    <script>
+    // exigencia: Nome Completo, CPF com 11 caracteres e Cx de Texto com no mínimo 20 caracteres
+    /**
+    * Vaidaão simples com JS
+    * Exemplo de uso das funções do Arrays
+    * @author André Barros
+    */
+
+    function validacao(){
+        //o metodo abaixo é usado para capturar dados de formularios diversos
+        let formulario = document.forms.frmCadastro
+        let nome = formulario.txtNome.value
+        let cpf = formulario.txtCpf.value
+        let sexo = formulario.sexo.value
+        let perfil = formulario.txtPerfil.value
+        let erro = false
+        if (nome.indexOf(' ') === -1){
+            alert('Preencha o Nome Completo')
+            erro = true
+        }
+        if (cpf.length != 11){
+            alert('CPF Invalido')
+            erro = true
+        }
+
+        if (perfil.length < 20){
+            alert('Digite pelo menos 20 caracteres')
+            erro = true
+        }
+        if (erro === true){
+            return false
+        }else{
+            return true
+        }
+    }
+    
+    </script>
+</body>
+</html>
