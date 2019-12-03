@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.Layout{
+    background-image: url("imagens/background.jpg");
+    height: 320px;
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    background-attachment: fixed;
+
+}
+
+.Layout p{
+    text-align: center;
+    color: aliceblue;
+    font-size: 3em;
+    font-weight: bold;    
+}
+
+.modulo{
+    padding: 150px 0px 150px   0px;
+    margin:0 auto;
+    max-width: 1024px;
+}
+
+footer{
+    background-color: brown;
+    padding: 70px;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 0,9em;
+}
+
+#top{
+    position: fixed;
+    cursor: pointer;
+    right: 15px;
+    bottom: 15px
+}

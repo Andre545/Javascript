@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    max-width: 1112px;
+    margin: 0 auto;
+    height: 128px;
+}
+
+.Logo{
+    display: inline-block;
+    height: 96px;
+    padding: 15px;
+}
+
+.Logo img{
+    height: 100%;
+}
+
+.Hamburguer{
+    display: none;
+}
+
+.Menu{
+    float: right;
+    padding-top: 52px;
+}
+
+.Menu ul{
+    list-style: none;
+}
+
+.Menu ul li{
+    float: left;
+}
+
+.Menu ul li a{
+    text-decoration: none;
+    padding: 15px;
+    color: #000;
+}
+
+.Menu ul li a:hover{
+    color: #ff0000;
+    transition: all 0.5s; /*efeito de transição*/
+
+}
+
+.Layout{
+    background-image: url('imagens/background.jpg');
+    height: 320px;
+    background-size: cover; /*mantem o tamanho máximo sem repetição */
+    background-position: center;
+    padding-top: 200px;
+    background-attachment: fixed;
+}
+
+.Layout p{
+    text-align: center;
+    color: #fff;
+    font-size: 3em; /* 12pt ou 16px */
+    font-weight: bold;
+}
+
+.Modulo{
+    padding: 150px 0px 150px 0px;
+    margin: 0 auto;
+    max-width: 1112px;
+    text-align: center;
+}
+
+/* Destaque */
+.Destaque{
+    list-style: none; /*remover os bullets*/
+    overflow: auto; /* corrigir o comportamento do float */
+}
+
+.Destaque li{
+    float: left;
+    padding: 10px;
+}
+
+.Destaque img{
+    border: #e8e8e8 1px solid;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #8b0000;
+    padding: 70px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+#top{
+    position: fixed;
+    cursor: pointer;
+    right: 15px;
+    bottom: 15px;
+}
